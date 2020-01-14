@@ -1,4 +1,4 @@
-### start
+### ¼³Ä¡
 *  cd <project-name>
 *  yarn install
 *  yarn start
