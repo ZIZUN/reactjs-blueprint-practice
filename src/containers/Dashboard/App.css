@@ -14,7 +14,7 @@
   height: 50px;
 }
 .aform:hover {
-  width: 420px;
+  width: 320px;
   height: auto;
 }
 .aform {
@@ -26,7 +26,7 @@
 
   border: 3px solid $oc-gray-6;
   border-radius: 55px;
-  width: 390px;
+  width: 300px;
   box-shadow: 10px 10px 30px black;
   transition: all 0.5s;
   transition-delay: 0.4s;
@@ -132,7 +132,7 @@
 }
 
 .App-logo {
-  height: 25vmin;
+  height: 20vmin;
   pointer-events: none;
   display: table;
   line-height: 100px;
