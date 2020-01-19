@@ -76,33 +76,33 @@ class Signup extends React.Component{
    }
   render(){
     return(
-      <div style={{backgroundColor: '#245541'}}>
+      <div style={{backgroundColor: '#ffffff'}}>
         <div>
           <Navbar />
         </div>
-        <form onSubmit={this.onSubmit.bind(this)}>
-          <div style={{width: '500px',margin: '0 auto',marginTop: '200px',padding: '50px'}}>
-            <div style={{height: '70px'}}>
-              <input className="pt-input" style={{width: "400px",height: '50px'}} placeholder="성명" type="text" dir="auto" onChange={this.onChange.bind(this,'username')}/>
+        <form className="aform" style={{  backgroundColor: '#f8f361'}}  onSubmit={this.onSubmit.bind(this)}>
+
+            <div style={{marginTop:60, height: '70px'}}>
+              <input className="pt-input" style={{width: "280px",height: '50px'}} placeholder="성명" type="text" dir="auto" onChange={this.onChange.bind(this,'username')}/>
               {!!this.showError('username') ? <p className="error-message">{this.getError('username')} </p> : null}
             </div>
             <div style={{height: '70px'}}>
-              <input className="pt-input" style={{width: "400px",height: '50px'}} placeholder="아이디" type="text" dir="auto" onChange={this.onChange.bind(this,'email')}/>
+              <input className="pt-input" style={{width: "280px",height: '50px'}} placeholder="아이디" type="text" dir="auto" onChange={this.onChange.bind(this,'email')}/>
               {!!this.showError('email') ? <p className="error-message">{this.getError('email')} </p> : null}
             </div>
             <div style={{height: '70px'}}>
-              <input className="pt-input" style={{width: "400px",height: '50px'}} placeholder="비밀번호" type="password" dir="auto" onChange={this.onChange.bind(this,'password')}/>
+              <input className="pt-input" style={{width: "280px",height: '50px'}} placeholder="비밀번호" type="password" dir="auto" onChange={this.onChange.bind(this,'password')}/>
               {!!this.showError('password') ? <p className="error-message">{this.getError('password')} </p> : null}
             </div>
             <div style={{height: '70px'}}>
-              <input className="pt-input" style={{width: "400px",height: '50px'}} placeholder="비밀번호 확인" type="password" dir="auto" onChange={this.onChange.bind(this,'confirm_password')}/>
+              <input className="pt-input" style={{width: "280px",height: '50px'}} placeholder="비밀번호 확인" type="password" dir="auto" onChange={this.onChange.bind(this,'confirm_password')}/>
               {!!this.showError('confirm_password') ? <p className="error-message">{this.getError('confirm_password')} </p> : null}
             </div >
-            <button style={{width: 400,height: '50px'}} type="submit"  class="pt-button pt-intent-primary">가입하기</button>
+            <button style={{ width: 280,height: '50px'}} type="submit"  class="pt-button pt-intent-primary">가입하기</button>
+            <div style={{marginTop:40}}/>
             {this.state.serverMsg != '' && <p className="error-message" style={{textAlign: 'center', marginTop: 20}}>{this.state.serverMsg}</p>}
-          </div>
+
         </form>
-        <div style={{backgroundColor: '#245541', height: 300}}/>
       </div>
 
     )

@@ -69,8 +69,8 @@ class Login extends React.Component{
         <form className="aform" style={{ backgroundColor: '#f8f361'}}  onSubmit={this.onSubmit.bind(this)}>
           <img style={{ margin: '0 auto', marginTop:'40px' }} src={logo} className="App-logo"  alt="logo" />
 
-          <div style={{width: '380px',margin: '0 auto',marginTop: '20px',padding: '50px'}}>
-            <div style={{height: '70px'}}>
+
+            <div style={{marginTop:'40px', height: '70px'}}>
               <input className="pt-input" style={{width: "280px",height: '50px'}}  placeholder="아이디" type="text" dir="auto" onChange={this.onChange.bind(this,'email')}/>
               {!!this.showError('email') ? <p className="error-message">{this.getError('email')} </p> : null}
             </div>
@@ -79,11 +79,11 @@ class Login extends React.Component{
               {!!this.showError('password') ? <p className="error-message">{this.getError('password')} </p> : null}
             </div>
             <button class="pt-button pt-intent-primary" style={{ width: 280,height: '50px'}} type="submit" >로그인</button>
-            <button class="pt-button pt-intent-primary" style={{ marginTop:10, width: 250,height: '50px'}}><img style={{ width: 250,height: '50px'}} src={google_login}/></button>
+            <button class="pt-button pt-intent-primary" style={{ marginTop:10, margin:20, width: 250,height: '50px'}}><img style={{ width: 250,height: '50px'}} src={google_login}/></button>
 
-            {this.state.errorMsg != '' && <p className="error-message" style={{textAlign: 'center', marginTop: 20}}>{this.state.errorMsg}</p>}
+            {this.state.errorMsg != '' && <p className="error-message" style={{textAlign: 'center',  marginTop: 20}}>{this.state.errorMsg}</p>}
 
-          </div>
+
 
         </form>
       </div>
