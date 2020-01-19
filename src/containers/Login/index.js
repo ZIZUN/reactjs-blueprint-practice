@@ -78,8 +78,8 @@ class Login extends React.Component{
               <input className="pt-input" style={{width: "250px",height: '30px'}} placeholder="비밀번호" type="password" dir="auto" onChange={this.onChange.bind(this,'password')}/>
               {!!this.showError('password') ? <p className="error-message">{this.getError('password')} </p> : null}
             </div>
-            <button class="pt-button pt-intent-primary" style={{ width: 250,height: '30px'}} type="submit" >로그인</button>
-            <button class="pt-button pt-intent-primary" style={{ marginTop:10, width: 250,height: '50px'}}><img style={{ width: 250,height: '50px'}} src={google_login}/></button>
+            <button class="pt-button pt-intent-primary" style={{ width: 250,height: '30px'}} type="submit" >Sign in</button>
+            <input type="image" style={{ marginTop:10, width: 250,height: '50px'}} src={google_login}/>
             {this.state.errorMsg != '' && <p className="error-message" style={{textAlign: 'center',  marginTop: 20}}>{this.state.errorMsg}</p>}
             <div style={{ height: '30px'}}/>
 
